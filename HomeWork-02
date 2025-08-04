@@ -1,3 +1,4 @@
+// Доработать декоратор @Fee (и метод earnMoney) так, чтобы можно было передавать неограниченное количество аргументов с заработком в метод earnMoney, а декоратор считал их сумму и "удерживал" налог с нее
 function Fee(originalMethod: Function) {
 
     function replacementMethod(this: any, ...args: number[]) {
@@ -37,6 +38,7 @@ const myCompany = new Company("Tech Corp");
 const netIncome = myCompany.earnMoney(100);
 
 console.log(netIncome: $${netIncome}.);
+
 
 
 
