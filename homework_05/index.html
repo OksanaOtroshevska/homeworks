@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валидация email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #7e11cb, #5591fa);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            }
+        input {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 16px;
+            border-radius: 16px;
+            width: 300px;
+            text-align: center;
+        }
+        .valid {
+            border: 2px solid green;
+        }
+        .invalid {
+            border: 2px solid red;
+        }
+        .hint {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        button:disabled {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            background: #99cc0b;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="emailForm">
+        <input type="text" id="emailInput" placeholder="exemplum@mail.com">
+        <button type="submit" disabled>Отправить</button>
+        <div class="hint" id="hint">Введите email</div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
